@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
 <link href="<?=base_url()?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
   <fieldset>
     <legend>Legend</legend>
     <label>Label name</label>
-    <input type="text" placeholder="Type something…">
+    <input type="text" placeholder="Type something.">
     <span class="help-block">Example block-level help text here.</span>
 	
 	<input type="text" placeholder="Text input">
