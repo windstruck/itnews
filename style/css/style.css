@@ -1,0 +1,56 @@
+header .navbar .brand.logo {
+padding: 0;
+margin-left: 0;
+margin-top: 20px;
+}
+header nav {
+margin-right: -10px;
+}
+.navbar ul.topnav {
+float: right;
+}
+.navbar .navbar-inner {
+background: #fff;
+border-color: none;
+}
+.navbar .nav > li > a {
+float: none;
+padding: 30px 15px 30px;
+color: #777777;
+text-decoration: none;
+text-shadow: none;
+}
+.navbar .nav .success > a, .navbar .nav .success > a:hover, .navbar .nav .success > a:focus {
+background-color: #7cbb00;
+color: #fff;
+}
+.navbar .nav .primary > a, .navbar .nav .primary > a:hover, .navbar .nav .primary > a:focus {
+background-color: #009cea;
+color: #fff;
+}
+.navbar .nav .danger > a, .navbar .nav .danger > a:hover, .navbar .nav .danger > a:focus {
+background-color: #ec4f13;
+color: #fff;
+}
+.navbar .nav .warning > a, .navbar .nav .warning > a:hover, .navbar .nav .warning > a:focus {
+background-color: #ffbb00;
+color: #fff;
+}
+.navbar .nav .info > a, .navbar .nav .info > a:hover, .navbar .nav .info > a:focus {
+background-color: #a903b3;
+color: #fff;
+}
+.navbar .nav .inverse > a, .navbar .nav .inverse > a:hover, .navbar .nav .inverse > a:focus {
+background-color: #333;
+color: #fff;
+}
+
+section#intro {
+max-width: 100%;
+background: #f5f5f5;
+color: #fff;
+height: auto;
+margin: 0 auto;
+margin-top: 80px;
+padding: 40px 0 20px;
+}
