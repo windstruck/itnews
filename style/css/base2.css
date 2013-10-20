@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* body
+===============================================================*/
+body{
+	background:url(../images/body_bg.gif) repeat-x;
+	font-family: "ＭＳ Ｐゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Arial,Osaka,Sans-Serif;
+	font-size: 12px;
+}
+
+/* for clearFix
+===============================================================*/
+.clear{
+	clear:both;
+}
+
+.cf:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+	font-size:0;
+}
+
+.cf{
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+div#header{
+	padding-top:5px;
+}
+div#headL{
+	float:left;
+	display:inline;
+	margin-top:21px;
+	margin-bottom:1px;
+}
+
+div#headL div{
+	float:right;
+	display:inline;
+	margin-top:44px;
+}
+
+div#headR{
+	float:right;
+	display:inline;
+}div#headR ul{
+	margin-bottom:10px;
+}
+
+div#headR ul li{
+	float:right;
+	display:inline;
+	margin-left:3px;
+	color:#66b9ed;
+}
+
+div#headR ul li a:link,div#headR ul li a:visited,div#headR ul li a:hover{
+	font-size:11px;
+}
+
+div#headR ul.s_nav{
+	margin-left:10px;
+	padding-top:20px;
+}
+
+div#headR ul.s_nav li a{
+	margin-left:10px;
+	padding-right:15px;
+	color:#66b9ed;
+}
+
+div#headR ul.s_nav li a:hover{
+	text-decoration:none;
+	color:#4990ca;
+}
+
+
+div#headR ul.s_nav li.s_nav_last a{
+	padding-right:0!important;
+}
+
+div#headR p{
+	text-align:right;
+	padding-top:20px;
+}
+
+/*banner left*/
+ul.banner li {
+	margin-bottom: 15px;
+	padding-left: 0px;
+}
+
+div.round_box {
+background: url(../images/slide/side_box_mid.gif) repeat-y #f3f0ed;
+font-size: 11px;
+margin-bottom: 15px;
+width: 230px;
+}
+
+div.round_box_in {
+background: url(../images/slide/side_box_btm.gif) no-repeat left bottom;
+padding-bottom: 5px;
+}
+
+div.side_in_box {
+width: 221px;
+margin: 0 auto 5px;
+font-size: 11px;
+background: url(../images/slide/dot_bg_top.gif) no-repeat left top #fdfdfd;
+padding-top: 5px;
+}
+
+div.side_in_box div {
+background: url(../images/slide/dot_bg_mid.gif) repeat-y;
+}
+
+div.side_in_box div div {
+background: url(../images/slide/dot_bg_btm.gif) no-repeat left bottom;
+padding: 5px 10px;
+}
+
+div.side_in_box div div dl {
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.cat01{
+	width:79px;
+	height:14px;
+	padding-bottom:3px;
+	background:url(../images/slide/cat01_bg.gif) no-repeat left top;
+	text-align:center;
+	color:#FFF;
+	
+}
+.cat02{
+	width:79px;
+	height:14px;
+	padding-bottom:3px;
+	background:url(../images/slide/cat02_bg.gif) no-repeat left top;
+	text-align:center;
+	color:#918375;
+}
+
+
+.cat03{
+	width:79px;
+	height:14px;
+	padding-bottom:3px;
+	background:url(../images/slide/cat03_bg.gif) no-repeat left top;
+	text-align:center;
+	color:#918375;
+}
+
+.cat04{
+	width:79px;
+	height:14px;
+	padding-bottom:3px;
+	background-color:#9ececa;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align:center;
+	color:#fff;
+}
+
+.border01_b {
+	border-bottom: 1px dotted #b7b5b2;
+	padding-bottom: 10px;
+}
+
+div.side_apartment dl dd {
+	margin-top: 5px;
+	line-height: 1.6em;
+	font-size: 85%;
+	color: #03a7d6;
+}
+
+/*content*/
+
+div.h2_box {
+	width: 100%;
+	background: url(../images/tit_bg.gif) repeat-x left top;
+	padding-top: 30px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.icon_search {
+	background: url(../images/icon/icon_search.gif) no-repeat left top;
+	height: 21px;
+	padding: 3px 0 3px 40px;
+}
+
+div.h2_box div h2 span {
+	margin-right: 10px;
+}
+
+div.h2_box div p {
+	float: right;
+	display: inline;
+}
+
+.font_c05 {
+	color: #855b27;
+}
+
+.mt20 {
+	margin-top: 20px!important;
+}
+
+.h2_detail01 {
+	color: #529ccb;
+	background: #edf6fb;
+	padding: 5px 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.search div {
+	width: 345px;
+	float: left;
+	display: inline;
+	margin-bottom: 20px;
+	height: 70px;
+}
+
+div.search div p {
+	width: 92px;
+	padding: 1px;
+	background: #FFF;
+	border: 1px solid #d6d1cf;
+	float: left;
+	display: inline;
+}
+
+div.search div dl {
+	width: 234px;
+	float: right;
+	display: inline;
+	line-height: 1.4em;
+}
+
+div.search div dl dt {
+	background: url(../images/icon/icon02.png) no-repeat left center;
+	padding-left: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
