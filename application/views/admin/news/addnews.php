@@ -1,54 +1,100 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <link href="<?=base_url()?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="<?=base_url()?>bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<script type="text/javascript" src="bootstrap/js/jquery.js" rel="stylesheet"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" rel="stylesheet"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.js" rel="stylesheet"></script>
+<script type="text/javascript" src="<?=base_url()?>bootstrap/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.js"></script>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
+<script type="text/javascript">
 
+$(document).ready(function(){
+
+	$('#check-parent').click(function(){
+		if ($('#check-parent').is(':checked')) {
+		    $("#select-parent").attr('disabled', false);
+		} else {
+			$("#select-parent").attr('disabled', true);
+		} 
+	});
+
+
+});
+
+</script>
 </head>
 <body>
 
-<div id="container">
-<div class="container">
-	<h1>Welcome to Administrator!</h1>
-	<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
-	<div id="body">
-		<form>
-  <fieldset>
-    <legend>Legend</legend>
-    <label>Label name</label>
-    <input type="text" placeholder="Type something.">
-    <span class="help-block">Example block-level help text here.</span>
-	
-	<input type="text" placeholder="Text input">
-    <label class="checkbox">
-      <input type="checkbox"> Check me out
-    </label>
-	
-	
-	
 
-    <button type="submit" class="btn">Submit</button>
-  </fieldset>
-</form>
+	<div class="container">
+		<h1>Add news category</h1>
+		    <form class="form-horizontal">
+		    <div class="control-group">
+		    <label class="control-label" for="inputName">Name</label>
+		    <div class="controls">
+		    <input type="text" id="inputName" placeholder="Name">
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="inputDescription">Description</label>
+		    <div class="controls">
+		    <input type="text" id="inputDescription" placeholder="Description">
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="inputImages">Add images</label>
+		    <div class="controls">
+		    	<input type="file" name="inputImages" id="inputImages" />
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="inputMeta-desc">Meta Description</label>
+		    <div class="controls">
+		    <input type="text" id="inputMeta-desc" placeholder="Meta Description">
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="inputMeta-key">Meta Key</label>
+		    <div class="controls">
+		    <input type="text" id="inputMeta-key" placeholder="Meta Key">
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="inputMeta-data">Meta Data</label>
+		    <div class="controls">
+		    <input type="text" id="inputMeta-data" placeholder="Meta Data">
+		    </div>
+		    </div>
+		    
+		    <div class="control-group">
+		    <label class="control-label" for="select-parent">Select Parent</label>
+		    <div class="controls">
+			    <select id="select-parent" disabled="disabled">
+			    	<option value="select">-select-</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<input type="checkbox" value="" id="check-parent">
+		    </div>
+		    </div>
+		    
+		        <div class="form-actions">
+			    <button type="submit" class="btn btn-primary">Save changes</button>
+			    <input class="btn btn-danger" type="reset" value="Reset">
+			    </div>
+		    </form>		
 	</div>
-	
-	<div class="row">
-  <div class="span9">
-    Level 1 column
-    <div class="row">
-      <div class="span6">Level 2</div>
-      <div class="span3">Level 2</div>
-    </div>
-  </div>
-</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-</div>
-</div>
+
 </body>
 </html>
