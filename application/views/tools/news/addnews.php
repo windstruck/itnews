@@ -1,66 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link href="<?=base_url()?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="<?=base_url()?>bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.js"></script>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-<script type="text/javascript">
-
-$(document).ready(function(){
-
-	$('#check-parent').click(function(){
-		if ($('#check-parent').is(':checked')) {
-		    $("#select-parent").attr('disabled', false);
-		} else {
-			$("#select-parent").attr('disabled', true);
-		} 
-	});
-
-
-});
-
-</script>
-</head>
-<body>
 	<div class="container">
-		<div class="navbar">
-		<div class="navbar-inner">
-			  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-			  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </a>
-				
-			  <!-- Be sure to leave the brand out there if you want it shown -->
-			  <a class="brand" href="#">IT Techz</a>
-				<ul class="nav">
-				  <li class="active">
-					<a href="<?=base_url()?>index.php/tool">Control Panel</a>
-				  </li>
-				  <li><a href="#">Menu</a></li>
-				  <li><a href="#">Content</a></li>
-				</ul>
-				
-				
-			  <!-- Everything you want hidden at 940px or less, place within here -->
-			  <div class="nav-collapse collapse">
-				<form class="navbar-search pull-right">
-				  <input type="text" class="search-query" placeholder="Search">
-				</form>
-			  </div> 
-		  </div>
-	</div>
-	
-	<ul class="breadcrumb">
-		<li><a href="#">Home</a> <span class="divider">/</span></li>
-		<li><a href="#">Library</a> <span class="divider">/</span></li>
-		<li class="active">Data</li>
-	</ul>
+	<?php 
+	$this->load->view('tools/menu_tool');
+	?>
 		<blockquote>
 		<p>Add news category</p>
 		</blockquote>
@@ -138,7 +79,3 @@ $(document).ready(function(){
 		    </form>		
 		</div>
 	</div>
-
-
-</body>
-</html>

@@ -10,11 +10,13 @@ class News extends CI_Controller {
        }	
 	   
 	public function index(){	
-	$this->load->view('tools/news/addnews');
+		$this->load->view('tools/header_tool');
+		$this->load->view('tools/news/addnews');
+		$this->load->view('tools/footer_tool');
 	}
 	
 	function addCat(){
-	$CPOST = $this->input->post();	
+		$CPOST = $this->input->post();	
     
 		$dataMC['name'] = $CPOST['name'];		
 		$dataMC['description'] = $CPOST['desc'];		
@@ -27,5 +29,12 @@ class News extends CI_Controller {
 		$dataAll['category'] = $dataMC;
 		echo $this->newsModel->add_category($dataAll);
 	}
-}
+	
+	function addArticle(){
+		$this->load->view('tools/header_tool');
+		$this->load->view('tools/news/addarticle');	
+		$this->load->view('tools/footer_tool');
+		
+	}
+	}
 ?>

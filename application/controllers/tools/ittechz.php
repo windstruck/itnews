@@ -9,7 +9,13 @@ class Ittechz extends CI_Controller {
        }	
 	   
 	public function index(){	
-	$this->load->view('tools/template');
+		$this->load->view('tools/header_tool');
+		$this->load->view('tools/template');
+		$this->load->view('tools/footer_tool');
+	}
+	
+	function includemenu(){	
+		$this->load->view('tools/menu_tool');
 	}
 }
 ?>
