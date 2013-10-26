@@ -43,7 +43,11 @@ color: #fff;
 background-color: #C71585;
 color: #fff;
 }
-.navbar .nav .info > a, .navbar .nav .info > a:hover, .navbar .nav .info > a:focus {
+.navbar .nav .warning2 > a, .navbar .nav .warning2 > a:hover, .navbar .nav .warning2 > a:focus, .nav .warning2 > a {
+background-color: #C71585;
+color: #fff;
+}
+.navbar .nav .info > a, .navbar .nav .info > a:hover, .navbar .nav .info > a:focus, .nav .info > a {
 background-color: #FFD700;
 color: #fff;
 }
@@ -51,8 +55,24 @@ color: #fff;
 background-color: #FF1493;
 color: #fff;
 }
+/*********************************go to top***********************************/
+#toTop {
+	width:100px;
+        border:1px solid #ccc;
+        background:#f7f7f7;
+        text-align:center;
+        padding:5px;
+        position:fixed; /* this is the magic */
+        bottom:10px; /* together with this to put the div at the bottom*/
+        right:10px;
+        cursor:pointer;
+        display:none;
+        color:#333;
+        font-family:verdana;
+        font-size:11px;
+}
 /********************************Tab color************************************/
- .nav .success > a:hover, .nav .primary > a:hover, .nav .danger > a:hover , .nav .warning > a :hover {
+ .nav .success > a:hover, .nav .primary > a:hover, .nav .danger > a:hover , .nav .warning > a :hover, .nav .info > a:hover, .nav .warning2 > a:hover {
 background-color: #95a5a6;
 color: #fff;
 }
