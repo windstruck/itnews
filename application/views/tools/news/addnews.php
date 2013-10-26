@@ -26,57 +26,90 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-
-
 	<div class="container">
+		<div class="navbar">
+		<div class="navbar-inner">
+			  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </a>
+				
+			  <!-- Be sure to leave the brand out there if you want it shown -->
+			  <a class="brand" href="#">IT Techz</a>
+				<ul class="nav">
+				  <li class="active">
+					<a href="<?=base_url()?>index.php/tool">Control Panel</a>
+				  </li>
+				  <li><a href="#">Menu</a></li>
+				  <li><a href="#">Content</a></li>
+				</ul>
+				
+				
+			  <!-- Everything you want hidden at 940px or less, place within here -->
+			  <div class="nav-collapse collapse">
+				<form class="navbar-search pull-right">
+				  <input type="text" class="search-query" placeholder="Search">
+				</form>
+			  </div> 
+		  </div>
+	</div>
+	
+	<ul class="breadcrumb">
+		<li><a href="#">Home</a> <span class="divider">/</span></li>
+		<li><a href="#">Library</a> <span class="divider">/</span></li>
+		<li class="active">Data</li>
+	</ul>
+	
 		<h1>Add news category</h1>
-		    <form class="form-horizontal">
+		    <form class="form-horizontal" action="<?=base_url()?>index.php/tools/news/addCat" method="post">
 		    <div class="control-group">
 		    <label class="control-label" for="inputName">Name</label>
 		    <div class="controls">
-		    <input type="text" id="inputName" placeholder="Name">
+		    <input type="text" id="inputName" placeholder="Name" name="name">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputDescription">Description</label>
 		    <div class="controls">
-		    <input type="text" id="inputDescription" placeholder="Description">
+		    <input type="text" id="inputDescription" placeholder="Description" name="desc">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputImages">Add images</label>
 		    <div class="controls">
-		    	<input type="file" name="inputImages" id="inputImages" />
+		    	<input type="file" id="inputImages" name="images" />
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-desc">Meta Description</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-desc" placeholder="Meta Description">
+		    <input type="text" id="inputMeta-desc" placeholder="Meta Description" name="metadesc">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-key">Meta Key</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-key" placeholder="Meta Key">
+		    <input type="text" id="inputMeta-key" placeholder="Meta Key" name="metakey">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-data">Meta Data</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-data" placeholder="Meta Data">
+		    <input type="text" id="inputMeta-data" placeholder="Meta Data" name="metadata" >
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="select-parent">Select Parent</label>
 		    <div class="controls">
-			    <select id="select-parent" disabled="disabled">
+			    <select id="select-parent" disabled="disabled"  name="idparent">
 			    	<option value="select">-select-</option>
 					<option>1</option>
 					<option>2</option>
