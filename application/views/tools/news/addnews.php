@@ -61,20 +61,30 @@ $(document).ready(function(){
 		<li><a href="#">Library</a> <span class="divider">/</span></li>
 		<li class="active">Data</li>
 	</ul>
-	
-		<h1>Add news category</h1>
+		<blockquote>
+		<p>Add news category</p>
+		</blockquote>
+		
+		<div class="row">
 		    <form class="form-horizontal" action="<?=base_url()?>index.php/tools/news/addCat" method="post">
 		    <div class="control-group">
 		    <label class="control-label" for="inputName">Name</label>
 		    <div class="controls">
-		    <input type="text" id="inputName" placeholder="Name" name="name">
+		    <input type="text" id="inputName" class="input-block-level" placeholder="Name" name="name">
+		    </div>
+		    </div>
+			
+			<div class="control-group">
+		    <label class="control-label" for="inputName">Alias</label>
+		    <div class="controls">
+		    <input type="text" id="inputName" class="input-block-level" placeholder="Name" name="alias">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputDescription">Description</label>
 		    <div class="controls">
-		    <input type="text" id="inputDescription" placeholder="Description" name="desc">
+			<textarea rows="5" id="inputDescription" class="input-block-level" placeholder="Description" name="desc"></textarea>
 		    </div>
 		    </div>
 		    
@@ -88,28 +98,28 @@ $(document).ready(function(){
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-desc">Meta Description</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-desc" placeholder="Meta Description" name="metadesc">
+			<textarea rows="5" id="inputDescription" class="input-block-level" placeholder="Description" name="metadesc"></textarea>
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-key">Meta Key</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-key" placeholder="Meta Key" name="metakey">
+		    <input type="text" id="inputMeta-key" class="input-block-level" placeholder="Meta Key" name="metakey">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-data">Meta Data</label>
 		    <div class="controls">
-		    <input type="text" id="inputMeta-data" placeholder="Meta Data" name="metadata" >
+		    <input type="text" id="inputMeta-data" class="input-block-level" placeholder="Meta Data" name="metadata" >
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="select-parent">Select Parent</label>
 		    <div class="controls">
-			    <select id="select-parent" disabled="disabled"  name="idparent">
+			    <select id="select-parent" disabled="disabled" class="input-block-level" name="idparent">
 			    	<option value="select">-select-</option>
 					<option>1</option>
 					<option>2</option>
@@ -126,6 +136,7 @@ $(document).ready(function(){
 			    <input class="btn btn-danger" type="reset" value="Reset">
 			    </div>
 		    </form>		
+		</div>
 	</div>
 
 
