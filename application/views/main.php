@@ -1346,13 +1346,14 @@
 	</div>
 	
 			<ul id="myTab" class="nav nav-tabs">
-              <li class="success"><a href="#home" data-toggle="tab"><i class="icon-road icon-white"></i> Home</a></li>
-              <li class="primary"><a href="#profile" data-toggle="tab"><i class="icon-file icon-white"></i> Profile</a></li>
-              <li class="danger"><a href="#aaaa" data-toggle="tab"><i class="icon-th-large icon-white"></i> Dropdown </a></li>
-			  <li class="warning"><a href="#aaaa" data-toggle="tab"><i class="icon-music icon-white"></i> Dropdown </a></li>
+              <li class="success"><a href="#lifestyle" data-toggle="tab"><i class="icon-heart icon-white"></i> Technology for Lifestyle</a></li>
+              <li class="primary"><a href="#business" data-toggle="tab"><i class="icon-file icon-white"></i> Technology for business</a></li>
+              <li class="danger"><a href="#education" data-toggle="tab"><i class="icon-briefcase icon-white"></i> Technology for education </a></li>
+			  <li class="warning2"><a href="#sport" data-toggle="tab"><i class="icon-star-empty icon-white"></i> Technology for sport </a></li>
+			  <li class="info"><a href="#all" data-toggle="tab"><i class="icon-film icon-white"></i>Technology for all</a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
-              <div class="row tab-pane fade in active" id="home">                
+              <div class="row tab-pane fade in active" id="lifestyle">                
 				<ul class="thumbnails">
 					<li class="span3">
 						<div class="showcategory thumbnail">
@@ -1466,9 +1467,122 @@
 						</div>				
 						</div>
 					</li>
+					<li class="span3">
+						<div class="showcategory thumbnail">
+						<div class="view-image">
+						<!-- Intro images -->
+						<div class="img-intro images-content">
+							<a class="article-link" href="#">
+								<img title="#" src="<?=base_url()?>style/images/vimeo-1.jpg" alt="#">
+							</a>
+						</div>					
+						<!-- Full images-->
+						<span class="category-name blue">
+							<a href="/ja_magz/index.php/en/news">News</a>
+						</span>
+						</div>
+						<div class="marginbottom article-content clearfix">
+							<div class="article-aside clearfix">
+							<span class="mod-articles-category-writtenby">
+							<span class="name">Written by </span>
+							<span><a href="#">James</a></span>													
+							</span>
+							<span class="mod-articles-category-date">3 weeks 5 days ago</span>
+							</div>
+							<h3>
+							<a class="category-title" href="#">Holiday travel deals before fares take off</a>
+							</h3>				
+						</div>				
+						</div>
+					</li>
+					<li class="span3">
+						<div class="showcategory thumbnail">
+						<div class="view-image">
+						<!-- Intro images -->
+						<div class="img-intro images-content">
+							<a class="article-link" href="#">
+								<img title="#" src="<?=base_url()?>style/images/vimeo-1.jpg" alt="#">
+							</a>
+						</div>					
+						<!-- Full images-->
+						<span class="category-name blue">
+							<a href="/ja_magz/index.php/en/news">News</a>
+						</span>
+						</div>
+						<div class="marginbottom article-content clearfix">
+							<div class="article-aside clearfix">
+							<span class="mod-articles-category-writtenby">
+							<span class="name">Written by </span>
+							<span><a href="#">James</a></span>													
+							</span>
+							<span class="mod-articles-category-date">3 weeks 5 days ago</span>
+							</div>
+							<h3>
+							<a class="category-title" href="#">Holiday travel deals before fares take off</a>
+							</h3>				
+						</div>				
+						</div>
+					</li>
+					<li class="span3">
+						<div class="showcategory thumbnail">
+						<div class="view-image">
+						<!-- Intro images -->
+						<div class="img-intro images-content">
+							<a class="article-link" href="#">
+								<img title="#" src="<?=base_url()?>style/images/vimeo-1.jpg" alt="#">
+							</a>
+						</div>					
+						<!-- Full images-->
+						<span class="category-name blue">
+							<a href="/ja_magz/index.php/en/news">News</a>
+						</span>
+						</div>
+						<div class="marginbottom article-content clearfix">
+							<div class="article-aside clearfix">
+							<span class="mod-articles-category-writtenby">
+							<span class="name">Written by </span>
+							<span><a href="#">James</a></span>													
+							</span>
+							<span class="mod-articles-category-date">3 weeks 5 days ago</span>
+							</div>
+							<h3>
+							<a class="category-title" href="#">Holiday travel deals before fares take off</a>
+							</h3>				
+						</div>				
+						</div>
+					</li>
+					<li class="span3">
+						<div class="showcategory thumbnail">
+						<div class="view-image">
+						<!-- Intro images -->
+						<div class="img-intro images-content">
+							<a class="article-link" href="#">
+								<img title="#" src="<?=base_url()?>style/images/vimeo-1.jpg" alt="#">
+							</a>
+						</div>					
+						<!-- Full images-->
+						<span class="category-name blue">
+							<a href="/ja_magz/index.php/en/news">News</a>
+						</span>
+						</div>
+						<div class="marginbottom article-content clearfix">
+							<div class="article-aside clearfix">
+							<span class="mod-articles-category-writtenby">
+							<span class="name">Written by </span>
+							<span><a href="#">James</a></span>													
+							</span>
+							<span class="mod-articles-category-date">3 weeks 5 days ago</span>
+							</div>
+							<h3>
+							<a class="category-title" href="#">Holiday travel deals before fares take off</a>
+							</h3>				
+						</div>				
+						</div>
+					</li>
+				
 				</ul>
               </div>
-              <div class="row tab-pane fade" id="profile">
+              <div class="row tab-pane fade" id="business">
                 <ul class="thumbnails">
 				<li class="span3">
 				<div class="showcategory thumbnail">
@@ -1592,10 +1706,14 @@
 				
 				</ul>
               </div>
-              <div class="tab-pane fade" id="dropdown1">
+			  
+              <div class="tab-pane fade" id="education">
                 <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
               </div>
-              <div class="tab-pane fade" id="dropdown2">
+              <div class="tab-pane fade" id="sport">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+			  <div class="tab-pane fade" id="all">
                 <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
               </div>
             </div>
@@ -1641,8 +1759,23 @@
 </div>
 </footer>
 
-
-    <script src="<?=base_url()?>bootstrap/js/bootstrap-tab.js"></script>
+<div id="toTop">^ Back to Top</div>
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#toTop').fadeIn();	
+		} else {
+			$('#toTop').fadeOut();
+		}
+	});
+ 
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});	
+});
+</script>
+<script src="<?=base_url()?>bootstrap/js/bootstrap-tab.js"></script>
 
 </body>
 </html>
