@@ -5,12 +5,12 @@ class News extends CI_Controller {
        {
             parent::__construct();
             $this->load->database();
-			$this->load->helper('url');		
+			$this->load->helper('url');	
 			$this->load->model('newsModel');
        }	
 	   
 	public function index(){	
-	$this->load->view('tools/news/addnews');
+		$this->load->view('tools/news/addnews');
 	}
 	
 	function addCat(){
@@ -26,6 +26,10 @@ class News extends CI_Controller {
 		
 		$dataAll['category'] = $dataMC;
 		echo $this->newsModel->add_category($dataAll);
+	}
+	
+	public function addImages(){
+		$this->load->view('tools/news/addImages');
 	}
 }
 ?>
