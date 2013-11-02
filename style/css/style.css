@@ -1,10 +1,15 @@
+header{
+overflow: hidden;
+height: 75px;
+}
 header .navbar .brand.logo {
 padding: 0;
 margin-left: 0;
 margin-top: 20px;
 }
-header nav {
+header navbar {
 margin-right: -10px;
+overflow: hidden;
 }
 .marginbottom{
 margin-bottom: 0px !important;
@@ -87,12 +92,12 @@ max-width: 100%;
 color: #fff;
 height: auto;
 margin: 0 auto;
-padding: 100px 0 20px;
+padding: 10px 0 20px;
 }
 
 /*******************************focus article*************************************/
 section#focus-articles{
-padding: 100px 0 50px 0;
+padding: 10px 0 50px 0;
 }
 .focus-articles {
 overflow: hidden;
@@ -523,7 +528,64 @@ vertical-align: inherit;
 .m-icon-big-swapdown {
 background-position: -115px -28px;
 }
+/********************************Inner*****************************************/
 
+.article-title, .article-header h1 {
+color: #2a2a2a;
+margin: 0 0 10px 0;
+line-height: 1.3;
+font-size: 28px;
+}
+article p{
+font-family: 'Roboto Slab',serif;
+font-size: 14px;
+line-height: 24px;
+color: #333;
+padding-top: 10px;
+text-align: justify;
+}
+.item-page>article>.article-aside {
+border-bottom: solid 1px #eaeaea;
+margin-top: 15px;
+margin-bottom: 40px;
+padding-bottom: 15px;
+}
+.pull-right {
+float: right;
+}
+.item-page > article > .article-aside .menu-edit ul li:first-child {
+border-left: solid 1px #eaeaea;
+padding-left: 10px;
+}
+.menu-edit ul li {
+border-left: 1px solid #eaeaea;
+display: inline-block;
+padding-left: 10px;
+margin-bottom: 0;
+margin-left: 10px;
+list-style: none;
+line-height: normal;
+}
+.item-page .article-body {
+font-family: 'Roboto Slab',serif;
+font-size: 14px;
+line-height: 24px;
+color: #333;
+}
+.article-body  p {
+margin: 10px 0 10px 0;
+}
+/**right**/
+.sidebar-2 {
+background: url("../images/bg/line.gif") repeat-y left top;
+margin-left: 20px;
+margin-bottom: 0;
+padding-left: 20px;
+padding-bottom: 20px;
+}
+.banneritem{
+text-align: center;
+}
 /*******************************Footer*****************************************/
 footer {
 padding-top: 30px;

@@ -8,9 +8,15 @@ class Mainpage extends CI_Controller {
 
        }	
 	public function index(){
-	$this->load->view('main');
+		$this->load->view('header');
+		$this->load->view('main');
+		$this->load->view('footer');
 	}
 	
-	
+	function inner(){
+		$this->load->view('header');
+		$this->load->view('inner');
+		$this->load->view('footer');
+	}
 }
 ?>
