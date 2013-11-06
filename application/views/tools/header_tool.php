@@ -11,7 +11,22 @@
 <script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.min.js" rel="stylesheet"></script>
 <script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.js" rel="stylesheet"></script>
 
+<!-- Jcrop -->
+<script src="<?=base_url()?>plugin/Jcrop/js/jquery.Jcrop.js"></script>
+<link rel="stylesheet" href="<?=base_url()?>plugin/Jcrop/css/jquery.Jcrop.css" type="text/css" />
 
+<!-- fancybox 1.3.4 -->
+<script type="text/javascript" src="<?=base_url()?>plugin/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="<?=base_url()?>plugin/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="<?=base_url()?>plugin/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<!-- jquery cookie -->
+<script src="<?=base_url()?>plugin/jquery_cookie/jquery.cookie.js"></script>
+
+<!-- ckeditor -->
+<script src="<?=base_url()?>plugin/ckeditor/ckeditor.js"></script>
+<!-- ckfinder -->
+<script src="<?=base_url()?>plugin/ckfinder/ckfinder.js"></script>
 
 <!--slide script-->
 <link rel="stylesheet" href="<?=base_url()?>style/css/slide/refineslide.css" />

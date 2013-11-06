@@ -1,36 +1,7 @@
 <?php 
 
-zzz
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link href="<?=base_url()?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="<?=base_url()?>bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>bootstrap/js/bootstrap.js"></script>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-<script type="text/javascript">
-
-$(document).ready(function(){
-
-	$('#check-parent').click(function(){
-		if ($('#check-parent').is(':checked')) {
-		    $("#select-parent").attr('disabled', false);
-		} else {
-			$("#select-parent").attr('disabled', true);
-		} 
-	});
-
-
-});
-
-</script>
-</head>
-<body>
-
 	<div class="container">
 	<?php 
 	$this->load->view('tools/menu_tool');
@@ -49,30 +20,33 @@ $(document).ready(function(){
 		    </div>
 			
 			<div class="control-group">
-		    <label class="control-label" for="inputName">Alias</label>
+		    <label class="control-label" for="inputAlias">Alias</label>
 		    <div class="controls">
-		    <input type="text" id="inputName" class="input-block-level" placeholder="Name" name="alias">
+		    <input type="text" id="inputAlias" class="input-block-level" placeholder="Alias" name="alias">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
-		    <label class="control-label" for="inputDescription">Description</label>
+		    <label class="control-label" for="editor1">Description</label>
 		    <div class="controls">
-			<textarea rows="5" id="inputDescription" class="input-block-level" placeholder="Description" name="desc"></textarea>
+			<textarea rows="5" id="desc" name="desc" placeholder="Description"></textarea>
+		    <?php //echo $this->ckeditor->editor("desc","default textarea value"); ?>
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputImages">Add images</label>
 		    <div class="controls">
-		    	<input type="file" id="inputImages" name="images" />
+		    	<a id ="addImages" href="<?=base_url()?>index.php/tools/news/addImages">Add Images</a>
+		    	<img src="<?=base_url()?>uploads/<?= $imgNameCrop; ?>" />
+		    	<input type="hidden" name="imgname" value="<?= $imgNameCrop; ?>">
 		    </div>
 		    </div>
 		    
 		    <div class="control-group">
 		    <label class="control-label" for="inputMeta-desc">Meta Description</label>
 		    <div class="controls">
-			<textarea rows="5" id="inputDescription" class="input-block-level" placeholder="Description" name="metadesc"></textarea>
+			<textarea rows="5" id="inputMeta-desc" class="input-block-level" placeholder="Meta Description" name="metadesc"></textarea>
 		    </div>
 		    </div>
 		    
@@ -106,9 +80,68 @@ $(document).ready(function(){
 		    </div>
 		    
 		        <div class="form-actions">
-			    <button type="submit" class="btn btn-primary">Save changes</button>
+			    <button id="saveCat" type="submit" class="btn btn-primary">Save changes</button>
 			    <input class="btn btn-danger" type="reset" value="Reset">
 			    </div>
 		    </form>		
 		</div>
 	</div>
+	
+	
+<script type="text/javascript">	
+
+// ckeditor & ckfinder
+CKEDITOR.replace('desc',{
+	language        : 'th', 
+	filebrowserBrowseUrl : '<?=base_url()?>plugin/ckfinder/ckfinder.html',
+	filebrowserImageBrowseUrl : '<?=base_url()?>plugin/ckfinder/ckfinder.html?Type=Images',
+	filebrowserFlashBrowseUrl : '<?=base_url()?>plugin/ckfinder/ckfinder.html?Type=Flash',
+	filebrowserUploadUrl : '<?=base_url()?>plugin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+	filebrowserImageUploadUrl : '<?=base_url()?>plugin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+	filebrowserFlashUploadUrl : '<?=base_url()?>plugin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+	});
+	
+$(document).ready(function(){
+
+	$.removeCookie('addArticleFlag', { path: '/' });
+	
+	$('#check-parent').click(function(){
+		if ($('#check-parent').is(':checked')) {
+		    $("#select-parent").attr('disabled', false);
+		} else {
+			$("#select-parent").attr('disabled', true);
+		} 
+	});
+
+// fancybox
+//	$("a#addImages").fancybox();
+
+	$("a#addImages").fancybox({
+		'width'				: '75%',
+		'height'			: '75%',
+		'autoScale'			: false,
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none',
+		'type'				: 'iframe'
+	});
+
+	// set cookie
+	$('#addImages').click(function(){
+
+		$.cookie('catName', $('#inputName').val(), { expires: 1 });
+		$.cookie('catAlias', $('#inputAlias').val(), { expires: 1 });
+		$.cookie('catDescription', $('#inputDescription').val(), { expires: 1 });
+
+	});
+
+	// get cookie value
+	var catName = $.cookie('catName');
+	var catAlias = $.cookie('catAlias');
+	var catDescription = $.cookie('catDescription');
+	$('#inputName').val(catName);
+	$('#inputAlias').val(catAlias);
+	$('#inputDescription').val(catDescription);
+
+});
+
+</script>

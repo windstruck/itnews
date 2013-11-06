@@ -21,5 +21,26 @@ class newsModel extends CI_Model {
 
 	}
 	
+	function get_category(){
+		$query = $this->db->query('select * from itt_category order by id');
+		$result = $query->result();
+		return $result;
+	}
+	
+	function add_article($data){
+	
+		$input_article = $data['article'];
+		//--------------------------------------------------------
+		$result = $this->db->insert('itt_article',$input_article);
+			
+		if($result){
+			echo "insert complete";
+		}else{
+			echo "insert error";
+		}
+	
+	
+	}
+	
 }
 ?>
